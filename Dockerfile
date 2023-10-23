@@ -13,6 +13,7 @@ RUN sudo apt-get install -y libgl1-mesa-glx
 RUN sudo apt-get install -y python3-pip
 
 # Install Packages
+RUN pip install ffmpeg-python
 RUN pip install --upgrade pip
 RUN pip3 install torch torchvision torchaudio
 RUN pip install ultralytics
